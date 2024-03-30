@@ -1,0 +1,38 @@
+header{
+background-color: black;  
+height: auto;  
+color: aqua;
+text-align:center;
+font-size:30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.main{
+    background-color: rgb(65, 2, 2); 
+    height: auto;   
+ 
+}
+
+.navtopli{
+    display:inline-block;
+    padding: 2%;
+}
+
+footer{
+    background-color: rgb(2, 2, 63);
+    height: 200px;
+}
+
+*,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.landingpage{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
