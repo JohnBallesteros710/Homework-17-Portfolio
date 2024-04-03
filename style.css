@@ -1,37 +1,138 @@
 
+.container{
+    background-color: rgb(255, 255, 255); 
+    height: 100%;  
+    width: 100%; 
+display:flex;
+flex-direction: row-reverse;
+flex-shrink:0;
 
-header{
-background-color: black;  
-height: auto;  
-color: rgb(255, 255, 255);
-text-align:center;
-font-size:40px;
-font-family:Georgia, 'Times New Roman', Times, serif;
+
+ }
+
+.landingpage{
+   width:700px;
+   height:920px;
+   flex-shrink:0; 
+   
+}
+
+.maintext{
+  background-color: rgb(5, 100, 80);
+  width:65%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap:nowrap;
+  flex-shrink:0; 
+      
+  }
+
+.header1{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 100px;
+  
+}
+
+.header2{
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  
+}
+
+.button-box{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  background-color: ;
+  width:750px;
+  height:400px;
+
 
 }
 
-.main{
-    background-color: rgb(49, 11, 11); 
-    height: auto;  
-    width: auto; 
- 
+.button-grid1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 500px;
+  height: auto;
+  background-color: ;
 }
 
-.navtopli{
-    display:inline-block;
-    padding: 3%;
-    align-content:center;
+.button-grid2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 500px;
+  height: auto;
+  background-color: ;
+
+  
 }
 
-footer{
-  display:flex;  
-  background-color: rgb(31, 2, 11);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: auto;
-    color:white;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+.button1{
+  color:black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 8px;
+  background-color: white;
+  width: 150px;
+  height:auto;
+  border-color: rgb(0, 0, 0) ;
+  border-style:groove;
+    
 }
+
+.button2{
+  color:black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 8px;
+  background-color: white;
+  width:220px;
+  height:auto;
+  border-color: rgb(0, 0, 0) ;
+  border-style:groove;
+  
+  
+}
+
+.button3{
+  color:black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 8px;
+  background-color: white;
+  width:200px;
+  height:auto;
+  border-color: rgb(0, 0, 0) ;
+  border-style:groove;
+  
+}
+
+.button4{
+  color:black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 8px;
+  background-color: white;
+  width:200px;
+  height:auto;
+  border-color: rgb(0, 0, 0) ;
+  border-style:groove;
+  
+}
+
+
 
 *,
   *::before,
@@ -39,16 +140,4 @@ footer{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-.landingpage{
-    display:grid;
-        grid-template-columns: 650px 75%;
-    color: white;
-    font-size: 40px;
-    align-content: center;
-
-  }
-
-
-
+  }  
