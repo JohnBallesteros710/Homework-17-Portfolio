@@ -1,0 +1,52 @@
+body {
+background-color: #531815;
+    
+  }
+
+.mainGrid {
+display: grid;
+grid-template-columns: 1.5fr 0.9fr;
+flex-shrink: 0;
+   
+    
+}
+
+.maintext{
+background-color: rgb(5, 100, 80);
+width:100%;
+justify-content: center;
+flex-shrink: 0;
+           
+        }
+
+.maintext{
+background-color:#531815;
+width:95%;
+padding: 5%;
+justify-content: center;
+flex-shrink: 0;
+               
+            }
+
+.header1{
+color: white;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight:normal;
+font-size: 80px;
+justify-content:center;
+text-align:left;
+flex-shrink: 0;
+padding:5%;                
+}
+
+.p1{
+color: white;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight:medium italic; 
+font-size: 40px;
+justify-content:center;
+text-align:left;
+flex-shrink: 0;
+padding:0%;   
+}
+

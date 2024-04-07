@@ -1,39 +1,33 @@
-
-.container{
-    background-color: rgb(255, 255, 255); 
-    height: 100%;  
-    width: 100%; 
-display:flex;
-flex-direction: row-reverse;
-flex-shrink:0;
-
-
- }
-
-.landingpage{
-   width:700px;
-   height:920px;
-   flex-shrink:0; 
-   
+body {
+  background-color: rgb(5, 100, 80);
 }
 
+
+.mainGrid {
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+flex-shrink: 0;
+
+}
+
+
 .maintext{
-  background-color: rgb(5, 100, 80);
-  width:65%;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items:center;
-  flex-wrap:nowrap;
-  flex-shrink:0; 
-      
-  }
+background-color: rgb(5, 100, 80);
+width:100%;
+padding: 5%;
+justify-content: center;
+flex-shrink: 0;
+   
+}
 
 .header1{
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 100px;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
   
 }
 
@@ -42,106 +36,45 @@ flex-shrink:0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-size: 30px;
+  text-align: center;
   
 }
 
 .button-box{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: space-around;
-  background-color: ;
-  width:750px;
-  height:400px;
-
-
-}
-
-.button-grid1{
   display: grid;
-  grid-template-columns: 50% 50%;
-  width: 500px;
-  height:auto;
-  background-color: ;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 150px 10px;
+  padding: 30px 10px;
+  flex-shrink: 0;
+  justify-content: center;
+
 }
 
-.button-grid2{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 500px;
-  height:auto;
-  background-color: ;
+button {
+  text-decoration: none;
 
-  
 }
 
-.button1{
+.button {
   color:black;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 40px;
   padding: 8px;
   background-color: white;
-  width: 150px;
-  height:auto;
+  width: 60%;
+  height:80px;
   border-color: rgb(0, 0, 0) ;
-  border-style:groove;
-  button:hover{
-    background-color: blue;
-  }
-    
-}
-
-.button2{
-  color:black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 8px;
-  background-color: white;
-  width:220px;
-  height:auto;
-  border-color: rgb(0, 0, 0) ;
-  border-style:groove;
-  
-  
-}
-
-.button3{
-  color:black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 8px;
-  background-color: white;
-  width:200px;
-  height:auto;
-  border-color: rgb(0, 0, 0) ;
-  border-style:groove;
-  
-}
-
-.button4{
-  color:black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 8px;
-  background-color: white;
-  width:200px;
-  height:auto;
-  border-color: rgb(0, 0, 0) ;
-  border-style:groove;
-  
+  border-radius: 22%;
+  margin: 25px 0;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 
 
-*,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }  
-
+.button:hover{
+  background-color: black;
+  color: white;
+}
