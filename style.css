@@ -5,8 +5,13 @@ body {
 
 .mainGrid {
 display: grid;
-grid-template-columns: 1.5fr 1fr;
-flex-shrink: 0;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas:
+"headers image" 
+"buttons image"
+;
+
 
 }
 
@@ -14,11 +19,18 @@ flex-shrink: 0;
 .maintext{
 background-color: rgb(5, 100, 80);
 width:100%;
-padding: 5%;
 justify-content: center;
-flex-shrink: 0;
-   
+grid-template-columns: 1fr 1fr 1fr;
+grid-area: headers;  
 }
+
+.landingpage{
+  height:auto;
+  width: auto;
+  grid-area: image;
+}
+
+
 
 .header1{
   color: white;
@@ -27,8 +39,7 @@ flex-shrink: 0;
   font-size: 100px;
   justify-content: center;
   text-align: center;
-  flex-shrink: 0;
-  
+ 
 }
 
 .header2{
@@ -37,44 +48,45 @@ flex-shrink: 0;
   font-style: italic;
   font-size: 30px;
   text-align: center;
+  padding:15%;
   
 }
 
 .button-box{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  margin: 150px 10px;
-  padding: 30px 10px;
-  flex-shrink: 0;
-  justify-content: center;
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr ;
+justify-content: center;
+grid-area: buttons;
 
 }
 
-button {
-  text-decoration: none;
-
+.about{
+  grid-area:about;
 }
 
 .button {
-  color:black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 8px;
-  background-color: white;
-  width: 60%;
-  height:80px;
-  border-color: rgb(0, 0, 0) ;
-  border-radius: 22%;
-  margin: 25px 0;
-  justify-content: center;
-  flex-shrink: 0;
+color:black;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 40px;
+padding: 8px;
+background-color: white;
+width: auto;
+height:80px;
+border-color: rgb(0, 0, 0) ;
+border-radius: 22%;
+margin: 25px 0;
+justify-content: center;
 }
 
 
 
-.button:hover{
+
+
+button:hover{
   background-color: black;
   color: white;
 }
+
+
