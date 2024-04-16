@@ -1,14 +1,12 @@
 body {
 background-color: #531815;
-    
-  }
+}
 
 .mainGrid {
 display: grid;
 grid-template-columns: 1.5fr 0.9fr;
+grid-template-rows: 1fr;
 flex-shrink: 0;
-   
-    
 }
 
 .maintext{
@@ -16,8 +14,7 @@ background-color: rgb(5, 100, 80);
 width:100%;
 justify-content: center;
 flex-shrink: 0;
-           
-        }
+}
 
 .maintext{
 background-color:#531815;
@@ -25,8 +22,7 @@ width:95%;
 padding: 5%;
 justify-content: center;
 flex-shrink: 0;
-               
-            }
+}
 
 .header1{
 color: white;
@@ -49,4 +45,20 @@ text-align:left;
 flex-shrink: 0;
 padding:0%;   
 }
+
+.button{
+  align-items: center;
+  color:white;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+ }
+
+
+
+ 
+a{
+  color:white;
+  text-decoration: none; 
+ }
 
